@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is a comment 
+     tags are divided based on behaviour
+     1.block level elements
+     are the elements which occupy complete space and which always start on new line
+     ex:h1,p,table,ul,ol
+     
+     2.inline level elements
+     are the elements which do not occupy complete space and which do not start on a new line.
+     ex:span,a,img
+
+     div and span
+     div is a block level element used to form the group of elements for applying styles
+
+     span
+     it is a inline element used to form the group of text for apply styles
+     
+     semantic tags
+     semantic tags are the tags which have meaning and which describe the content of the page
+     
+     <header>content</header>
+     <nav>content</nav>
+     <section>content</section>
+     <aside>content</aside>
+     <article>content</article>
+     <footer>content</footer>
+
+     forms
+     forms are used to collect the data from the user and send it to the server for processing and allow the user to interact with the web page
+     ex:login form,registration form,feedback form,contact form
+
+    forms are defined with the <form> tag and the data is collected using input tags
+    form fields are defined with input tags
+
+    type-it will control the behaviour of the input field
+    name-it will carry the data to the  backend as key value pair
+    for id-it will connect the label with the input field
+    required-it will make the input field mandatory to fill
+
+    form
+    method='get' or 'post'
+    -->
+    <form action="">
+        <label for="un">enter Username:</label>
+        <input id="un"type="text" name="uname" placeholder="Username"><br>
+        <label for="pwd">enter Password:</label>
+        <input required id="pwd" type="password" name="password" placeholder="Password"><br>
+
+        enter ur mail
+        <input type="email"><br>
+        enter ur number
+        <input type="number"><br>
+        book your appointment
+        <input type="date"><br>
+        book ur slot
+        <input type="datetime-local"><br>
+        upload ur file
+        <input type="file"><br>
+        search for product
+        <input type="search"><br>
+        rate yourself
+        <input type="range"><br>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+    <form action="">
+        choose a stack <br>
+        <input id="py" type="radio" name="stack"value="pythonstack">
+        <label for="py">python stack</label><br>
+        <input id="js" type="radio"name="stack"value="javastack">
+        <label for="js">java stack</label><br>
+        <input id="mrn" type="radio" name="stack" value="mernstack">
+        <label for="mrn">mern stack</label><br>
+
+        choose your skills <br>
+        <input id="html" type="checkbox" name="skills" value="html">
+        <label for="html">html</label>
+        <input id="css" type="checkbox" name="skills" value="css">
+        <label for="css">css</label>
+        <input id="js" type="checkbox" name="skills" value="javascript">
+        <label for="js">javascript</label>
+        <br>
+        select your branch
+        <select name="branch" id="">
+            <option value="vizag">vizag</option>
+            <option value="hyd">hyd</option>
+        </select>
+        <br>
+            
+
+        <button type="submit">submit</button>
+    </form>
+        
+</body>
+</html>

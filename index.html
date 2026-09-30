@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Form</title>
+</head>
+
+<body>
+
+    <h1>SV Forge Fitness</h1>
+    <h2>Gym Membership Registration Form</h2>
+
+    <form action="">
+
+        <!-- Personal Details -->
+        <h3>Personal Details</h3>
+
+        <label for="name">Full Name:</label>
+        <input id="name" type="text" name="name"
+               placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email"
+               placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="number" name="phone"
+               placeholder="Enter your phone number" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input id="dob" type="date" name="dob">
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <br>
+
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input id="other" type="radio" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Membership -->
+        <h3>Membership Details</h3>
+
+        <label for="plan">Select Membership Plan:</label>
+
+        <select id="plan" name="plan">
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="half-yearly">Half Yearly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+
+        <br><br>
+
+        <label for="joining">Joining Date:</label>
+        <input id="joining" type="date" name="joining">
+        <br><br>
+
+        <!-- Fitness Goals -->
+        <label>Fitness Goals:</label>
+        <br>
+
+        <input id="weightloss" type="checkbox"
+               name="goal" value="weightloss">
+        <label for="weightloss">Weight Loss</label>
+
+        <input id="muscle" type="checkbox"
+               name="goal" value="muscle">
+        <label for="muscle">Muscle Gain</label>
+
+        <input id="fitness" type="checkbox"
+               name="goal" value="fitness">
+        <label for="fitness">General Fitness</label>
+
+        <input id="strength" type="checkbox"
+               name="goal" value="strength">
+        <label for="strength">Strength</label>
+
+        <br><br>
+
+        <!-- Preferred Time -->
+        <label for="time">Preferred Workout Time:</label>
+        <input id="time" type="datetime-local" name="time">
+
+        <br><br>
+
+        <!-- Experience -->
+        <label for="experience">Gym Experience (Years):</label>
+        <input id="experience" type="number"
+               name="experience" min="0" max="20">
+
+        <br><br>
+
+        <!-- Photo -->
+        <label for="photo">Upload Profile Photo:</label>
+        <input id="photo" type="file" name="photo">
+
+        <br><br>
+
+        <!-- Satisfaction -->
+        <label for="rating">How motivated are you?</label>
+        <br>
+        <input id="rating" type="range" name="rating" min="1" max="10">
+
+        <br><br>
+
+        <!-- Search -->
+        <label for="search">Search for a Fitness Program:</label>
+        <input id="search" type="search"
+               name="program"
+               placeholder="Search program">
+
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="reset">Reset</button>
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
+```
